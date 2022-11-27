@@ -14,8 +14,5 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
-    - name: Creating User to Login
-      run: |
-         sudo useradd -m Area69Lab && sudo adduser Area69Lab sudo && echo 'Area69Lab:Area69Lab' | sudo chpasswd
-    - name: Setup tmate session
+     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
